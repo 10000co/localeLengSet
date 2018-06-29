@@ -12,8 +12,9 @@
 	<spring:message code="home.common.title" />
 </h1>
 
-<input type="button" value="Korea" onclick="location.href='ko'" />
+<input type="button" value="Korean" onclick="location.href='ko'" />
 <input type="button" value="English" onclick="location.href='en'" />
+<input type="button" value="Japanese" onclick="location.href='jp'" />
 
 </body>
 </html>

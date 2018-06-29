@@ -42,13 +42,19 @@ public class HomeController {
 	
 	@RequestMapping(value = "/ko", method = RequestMethod.GET)
 	public String ko(HttpSession session) {
-		session.setAttribute(SessionLocaleResolver.LOCALE_SESSION_ATTRIBUTE_NAME, Locale.KOREA);
+		session.setAttribute(SessionLocaleResolver.LOCALE_SESSION_ATTRIBUTE_NAME, Locale.KOREAN);
 		return "redirect:/";
 	}
 	
 	@RequestMapping(value = "/en", method = RequestMethod.GET)
 	public String en(HttpSession session) {
 		session.setAttribute(SessionLocaleResolver.LOCALE_SESSION_ATTRIBUTE_NAME, Locale.ENGLISH);
+		return "redirect:/";
+	}
+	
+	@RequestMapping(value = "/jp", method = RequestMethod.GET)
+	public String jp(HttpSession session) {
+		session.setAttribute(SessionLocaleResolver.LOCALE_SESSION_ATTRIBUTE_NAME, Locale.JAPANESE);
 		return "redirect:/";
 	}
 }
